@@ -37,7 +37,7 @@ export default function PriceCalculator() {
               Number of Invites
             </label>
             <div className="flex items-center gap-4">
-              <Slider value={[invites]} onChange={setInvites} />
+              <Slider value={invites} onChange={(val) => setInvites(val)} />
               <input
                 type="number"
                 value={invites}
